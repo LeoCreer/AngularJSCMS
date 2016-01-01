@@ -1,0 +1,48 @@
+<div ng-include="'/templates/bootstrap/views/navigation/main-menu.html'"></div>
+
+<div class="container">
+	<h1>{{categoryTitle}}</h1>
+
+	<div class='product-list container-fluid' >
+		
+		<div class="product col-md-2 col-sm-4" dir-paginate="product in productList | itemsPerPage: 1">
+			
+			<a href="{{product.category_name}}/{{product.title}}">
+
+				<div class="media col-md-12">
+					<img src="{{product.images[0]}}" class="main-image img-responsive ">
+				</div>
+
+
+				<div class="row images">
+					<div ng-repeat="url in product.images">
+						
+						<img src="{{url}}" class="img-responsive col-md-4 col-sm-1 col-xs-3">
+						
+					</div>
+				</div>
+
+
+				<div class="info">
+					<div class="title row">
+						<div class="col-md-12">
+							{{product.title}}
+						</div>
+					</div>
+					
+					<div class="price row">
+						<div class="col-md-6">
+							${{product.price_us}}
+						</div>
+						<div class="col-md-6 text-right">
+							approx. £{{product.price_eur}}
+						</div>
+					</div>
+				</div>
+
+			</a>
+		</div>
+	<div class="clearfix"></div>
+	<dir-pagination-controls></dir-pagination-controls>
+	</div>
+</div>
