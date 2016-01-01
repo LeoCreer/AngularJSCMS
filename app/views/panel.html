@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="cmsAppSwitch">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="http://AngularApplicationAndTemplateManagment.com/assets/css/bootstrap/3.3.5/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://AngularApplicationAndTemplateManagment.com/app/views/admin-panel.css">
+
+	<script type="text/javascript" src="http://AngularApplicationAndTemplateManagment.com/assets/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="http://AngularApplicationAndTemplateManagment.com/assets/js/bootstrap/3.3.5/bootstrap.min.js"></script>
+  <script src="http://AngularApplicationAndTemplateManagment.com/assets/js/angular.js/1.4.7/angular.min.js"></script>
+  <script src="http://AngularApplicationAndTemplateManagment.com/assets/js/angular.js/1.4.7/angular-sanitize.min.js"></script>
+  <script src="http://AngularApplicationAndTemplateManagment.com/assets/js/angular.js/1.4.7/angular-route.min.js"></script>
+  <script src="http://AngularApplicationAndTemplateManagment.com/app/controller/admin-panel/administrator-menu/app.js"></script>
+  <script src="http://AngularApplicationAndTemplateManagment.com/app/controller/admin-panel/administrator-menu/controller/template/index.js"></script>
+
+
+</head>
+  <body ng-controller="AdministratorMenuController">
+  	<div class="admin-panel">
+
+
+  			<nav class="navbar navbar-default">
+          <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="/assets/images/logo.png">
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              <li class="dropdown">
+                <a href="/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Templates <span class="caret"></span></a>
+                <ul class="dropdown-menu" >
+                  <li ng-repeat="template in templates">
+                    <a ng-click="templateRedirect(template.url)">{{template.name}}</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+  		
+
+  	</div>
+  </body>
+
+
+</html>

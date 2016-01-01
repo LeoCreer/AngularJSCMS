@@ -1,0 +1,44 @@
+{
+	"head":[
+
+		"assets/css/bootstrap/3.3.5/bootstrap.min.css",
+		"templates/nike/css/template.css",
+		
+		"app/routes.js",
+
+		"app/service/log.in.the.user/index.js",
+		"app/service/client.info/index.js",
+		"app/service/page.info/index.js",
+		"app/service/get.product.list/index.js",
+		"app/service/get.product/index.js",
+
+
+
+		"app/controller/login/login.js",
+		"app/controller/app.js",
+		"app/controller/home/home.js",
+		"app/controller/navigation/navigation.js",
+		
+
+		"app/controller/store/store.js",
+		"app/controller/store/product.js",
+		"app/controller/store/categories.js",
+		"app/controller/store/category.js",	
+
+
+		"app/directrives/dirPagination/dirPagination.js",
+		
+		"assets/js/ui-bootstrap-angular/0.14.2/ui-bootstrap-tpls-0.14.2.min.js",
+
+		
+
+
+		"assets/js/bootstrap/3.3.5/bootstrap.min.js",
+		"assets/js/packery/1.4.3/packery.js",
+		"assets/js/draggabilly/1.2.4/draggabilly.pkgd.min.js",
+		
+		"app/finished.js"
+	]
+}
+
+

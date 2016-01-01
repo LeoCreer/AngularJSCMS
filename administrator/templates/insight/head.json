@@ -1,0 +1,17 @@
+{
+	"head":[
+
+		"../assets/css/bootstrap/3.3.5/bootstrap.min.css",
+		"../administrator/templates/insight/css/template.css",
+		
+		"../administrator/app/routes.js",
+		"../administrator/app/controller/dashboard/index.js",
+		
+		"../app/finished.js",
+
+		"../assets/js/bootstrap/3.3.5/bootstrap.min.js"
+	]
+	
+}
+
+

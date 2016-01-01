@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="cms" ng-controller="AppController">
+	<head>
+		<base href="/">
+		<title>{{pageTitle}}</title>
+		<style type="text/css">html,body{width: 100%;height: 100%;}</style>
+		<script src="assets/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/head.js/head.load/1.0.3/head.load.js"></script>
+		<script src="assets/js/angular.js/1.4.7/angular.min.js"></script>
+		<script src="assets/js/angular.js/1.4.7/angular-sanitize.min.js"></script>
+		<script src="assets/js/angular.js/1.4.7/angular-route.min.js"></script>
+		<script src="app/app.js"></script>
+		<script src="app/controller/admin-panel/index.js"></script>
+		<script src="app/head.js"></script>
+
+	</head>
+	<body>
+	 	<div ng-include="'app/views/admin-panel.html'"></div>
+
+		<div class="component" ng-view style="width:100%; height:100%;"></div>
+	</body>
+</html>
+
+

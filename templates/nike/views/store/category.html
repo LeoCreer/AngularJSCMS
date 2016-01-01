@@ -1,0 +1,59 @@
+<div ng-include="'/templates/nike/views/navigation/main-menu.html'"></div>
+
+<h1>{{categoryTitle}}</h1>
+
+<div class='product-list container-fluid' >
+	<div class="row">
+        <div class="col-xs-4">
+			<label for="search">Search:</label>
+			<input ng-model="q" id="search" class="form-control" placeholder="Filter text">
+		</div>
+
+		<div class="col-xs-1">
+			<label for="search">items per page:</label>
+			<input type="number" min="1" max="100" class="form-control" ng-model="pageSize">
+		</div>
+
+
+
+	</div>
+	<div class="product col-md-2 col-sm-4" dir-paginate="product in productList | filter:q | itemsPerPage: pageSize">
+		
+		<a href="{{product.category_name}}/{{product.title}}">
+
+			<div class="media col-md-12">
+				<img src="{{product.images[0]}}" class="main-image img-responsive ">
+			</div>
+
+
+			<div class="row images">
+				<div ng-repeat="url in product.images">
+					
+					<img src="{{url}}" class="img-responsive col-md-4 col-sm-1 col-xs-3">
+					
+				</div>
+			</div>
+
+
+			<div class="info">
+				<div class="title row">
+					<div class="col-md-12">
+						{{product.title}}
+					</div>
+				</div>
+				
+				<div class="price row">
+					<div class="col-md-6">
+						${{product.price_us}}
+					</div>
+					<div class="col-md-6 text-right">
+						approx. £{{product.price_eur}}
+					</div>
+				</div>
+			</div>
+
+		</a>
+	</div>
+	<div class="clearfix"></div>
+	<dir-pagination-controls boundary-links="true" ></dir-pagination-controls>
+</div>
