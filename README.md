@@ -25,4 +25,7 @@ We use this to dynamicly load the head of document.
 
 
 # Instalation 
-	
+
+1 Install folder into root directory.
+
+2 go to app/app.js open folder and change url to your domain name
