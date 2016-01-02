@@ -26,7 +26,7 @@ var getAccess = [
 		discription:'',
 		defult_template:'nike',
 		defult_admin_template:'insight',	
-		url:'angularapplicationandtemplatemanagment.com'
+		url:'local.angularjscms.io'
 	},	
 	{
 		name:'Believable Creations',

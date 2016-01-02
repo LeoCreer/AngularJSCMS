@@ -16,14 +16,15 @@ if (Access.SuperUser == 'true'){
 	}
 	getTheCurrentTemplatefromCookie = getCookie("template");
 	
-	console.log(getTheCurrentTemplatefromCookie);
+	// console.log(getTheCurrentTemplatefromCookie);
 
 	if (getTheCurrentTemplatefromCookie != null){
 
-		// console.log('Administrator');
+		console.log('Administrator');
 		currentApplication.defult_template = getTheCurrentTemplatefromCookie; 
 		var templateHeadURL = "/templates/"+getTheCurrentTemplatefromCookie+"/head.json"
 	}else{
+		console.log(currentApplication.defult_template);
 		var templateHeadURL = "/templates/"+currentApplication.defult_template+"/head.json";
 	}
 	
@@ -35,7 +36,7 @@ if (Access.SuperUser == 'true'){
 
 
 
-// console.log(templateHeadURL);
+console.log(templateHeadURL);
 
 $.ajax({
 	method: "GET",
