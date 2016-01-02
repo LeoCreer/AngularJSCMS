@@ -28,4 +28,4 @@ We use this to dynamicly load the head of document.
 
 1 Install folder into root directory.
 
-2 go to app/app.js open folder and change url to your domain name
+2 go to app/app.js open file and change url on line"44" to your domain name
