@@ -34,7 +34,15 @@ var getAccess = [
 		discription:'',
 		defult_template:'bootstrap',
 		defult_admin_template:'insight',	
-		url:'believablecreations.com'
+		url:'local2.angularjscms.io'
+	},	
+	{
+		name:'Oclify',
+		logo:'http://d1vrkd1rl14bi3.cloudfront.net/assets/gopro-weekender/gopro_logo-115a033508a5b3d278f4e62a93dc186e.svg',
+		discription:'',
+		defult_template:'bootstrap',
+		defult_admin_template:'insight',	
+		url:'local3.angularjscms.io'
 	}	
 ]
 
@@ -89,11 +97,12 @@ var getTheApplicationUser = {
 	testUser:{
 		fname:'Leo',
 		lname:'Creer',
-		email:'leo@1.com',
-		adresss:'1600 Amphitheatre Parkway',
-		zip:'94043',
-		city:'Mountain View',
+		email:'leo@oclify.com',
+		adresss:'',
+		zip:'',
+		city:'',
 		state:'Ca',
+		url:'leocreer.com',
 		AccessControl:{
 			SuperUser:'true',
 			Administrator:{

@@ -1,7 +1,7 @@
 # AngularJSCMS
 AngularJSCMS is the front end for your costome CMS.
 
-AngularJSCMS does not have serverside scripting languige like PHP, Node, or ASP.Net however this is a application ready for a serverside scripting languige.  
+AngularJSCMS does not have serverside scripting languige like PHP, Node, or ASP.Net however this is a front-end boiler plate ready for a serverside scripting languige.  
 
 # AngularJSCMS Dependencies 
 
@@ -28,4 +28,5 @@ We use this to dynamicly load the head of document.
 
 1 Install folder into root directory.
 
-2 go to app/app.js open file and change url on line"44" to your domain name
+2 go to app/app.js open file and change url on line"29" to your domain name
+AngularJSCMS will now load.
