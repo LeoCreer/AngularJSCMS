@@ -1,5 +1,7 @@
 window.name = "NG_DEFER_BOOTSTRAP!";
 
+
+
 var getApplication = {
 
 	info: function(){
@@ -119,9 +121,9 @@ var getTheApplicationUser = {
 	}
 }
 
-
+// Ajax Request Starts  sends in url {var url = document.location.host;}
+	// on success of ajax request {var currentApplication = new getTheCurrentApplication.fromThe(url); return date on line 5 to 122 }
 var url = document.location.host;
-
 var currentApplication = new getTheCurrentApplication.fromThe(url);
 
 
