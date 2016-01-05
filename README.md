@@ -4,7 +4,7 @@ AngularJSCMS is the front end Boilerplate for your costume CMS.
 AngularJSCMS does not have server side scripting language like PHP, Node, or ASP.Net however this is a front-end boiler plate ready for a server side scripting language. 
 
 # Demo Site
-[a link](https:/http://angularjscms.io)
+[AngularJSCMS.io](http://angularjscms.io)
 
 # AngularJSCMS Dependencies 
 
