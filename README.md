@@ -1,11 +1,14 @@
 # AngularJSCMS
 AngularJSCMS is the front end Boilerplate for your costume CMS.
 
-AngularJSCMS does not have server side scripting language like PHP, Node, or ASP.Net however this is a front-end boiler plate ready for a server side scripting language.  
+AngularJSCMS does not have server side scripting language like PHP, Node, or ASP.Net however this is a front-end boiler plate ready for a server side scripting language. 
+
+# Demo Site
+[a link](https:/http://angularjscms.io)
 
 # AngularJSCMS Dependencies 
 
-
+	
 
 # Installation 
 
@@ -39,12 +42,15 @@ AngularJSCMS will now load.
 routs.js is controlled by Ajax request on page load
 
 Ajax Request Starts  sends in url 
+
 	var url = document.location.host;
 
 On success of Ajax request 
+
 	var currentApplication = new getTheCurrentApplication.fromThe(url); 
  
- Object getAccess.url is what initialize the application.
- "Be sure that getAccess.url has value of your domain"
+Object getAccess.url is what initialize the application.
+
+"Be sure that getAccess.url has value of your domain"
 
 
